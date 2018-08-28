@@ -1,4 +1,16 @@
-all: main
+all: main iterative.lst recursive.lst
 
-main: main.cpp
-	g++ -O3 -march=native -o main main.cpp
+main: main.o iterative.o recursive.o ackermann.o
+	g++ $^ -o $@ $(CXXFLAGS)
+
+%.o: %.cpp 
+	$(CXX) -c $< -o $@ $(CXXFLAGS)
+
+%.lst: %.cpp
+	g++ -O0 -c -fverbose-asm -Wa,-adhln $< > $@
+
+%.o: %.asm
+	nasm -f elf64 -o $@ $<
+
+clean:
+	rm -rf *.o *.lst
