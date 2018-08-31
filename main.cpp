@@ -5,7 +5,7 @@
 
 const bool DEBUG = false;
 const unsigned int LIMIT_M = 4;
-const unsigned int LIMIT_N = 10;
+const unsigned int LIMIT_N = 14;
 
 unsigned int ackermann_recursive(unsigned int, unsigned int);
 unsigned int ackermann_iterative(unsigned int, unsigned int);
@@ -45,7 +45,7 @@ int main (int ac, char **av) {
 
 
 	/* Iterative C */
-	if (1) {
+	if (0) {
 		std::cout << "Iterative C:" << std::endl;
 		auto start = std::chrono::system_clock::now();
 		for (int m = 0; m < LIMIT_M; m++) {
