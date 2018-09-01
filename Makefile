@@ -1,6 +1,6 @@
 all: main iterative.lst recursive.lst
 
-main: main.o iterative.o recursive.o ackermann.o
+main: main.o iterative.o recursive.o ackermann.o ackermann_asm2.o
 	g++ $^ -o $@ $(CXXFLAGS)
 
 %.o: %.cpp 
