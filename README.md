@@ -1,4 +1,4 @@
-Comparison of different Ackermann implementations for Algorithms Course in DCM/FFCLRP/USP
+Comparison of different Ackermann implementations for Algorithms Course in [DCM/FFCLRP/USP](http://dcm.ffclrp.usp.br/)
 
 The implementations are as followed:
 * Recursive implementation (recursive)
@@ -14,3 +14,5 @@ Though some are faster than others (Assembly and Recursive) their computation ti
 
 Curve fitting for recursive and asm2 implementations, both are best guessed as O(n<sup>2</sup>):
 ![Ackermann curve fitting](https://github.com/vnpavanelli/Ackermann/blob/master/files/Fitting.png)
+
+You can check Wikipedia for more information on [Ackermann function](https://en.wikipedia.org/wiki/Ackermann_function)
