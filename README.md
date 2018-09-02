@@ -11,3 +11,6 @@ All implementation shows the same complexity.
 Though some are faster than others (Assembly and Recursive) their computation time grows the same with the parameters.
 
 ![Ackermann comparison graph](https://github.com/vnpavanelli/Ackermann/blob/master/files/Ackermann1.png)
+
+Curve fitting for recursive and asm2 implementations, both are best guessed as O(x^2):
+![Ackermann curve fitting](https://github.com/vnpavanelli/Ackermann/blob/master/files/Fitting.png)
